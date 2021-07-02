@@ -9,7 +9,7 @@ on:
 jobs:
   docker:
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main' and github.event_name != 'pull_request'
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
     steps:
       -
         name: Checkout
