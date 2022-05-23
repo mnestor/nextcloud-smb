@@ -1,4 +1,4 @@
-FROM nextcloud:24.0.0-apache
+FROM nextcloud:24.0.1-apache
 
 RUN apt-get update && apt-get install -y procps smbclient libsmbclient-dev && \
     pecl install smbclient && \
